@@ -3,6 +3,7 @@ var PlayerTracker = require('../PlayerTracker');
 function MinionPlayer() {
     PlayerTracker.apply(this, Array.prototype.slice.call(arguments));
     this.isMi = true;   // Marks as minion
+	this.cellType = 1;
     this.socket.isConnected = true;
 }
 
